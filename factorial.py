@@ -4,7 +4,7 @@ def fact(num):
         num= num * fact(num-1)
     print("valor final->", num )
     return num
-fact(5)
+print(fact(5))
         
 
 
