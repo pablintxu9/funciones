@@ -1,9 +1,10 @@
-import math
 def fact(num):
-    if num<0:
-        return print("El factorial no está definido para números negativos")
-    elif num>0:
-        print("el numero seleccionado es :",num)
-        factorial=math.factorial(num)
+    print("el valor inicial es :", num)
+    if num>1:
+        num= num * fact(num-1)
+    print("valor final->", num )
+    return num
+fact(5)
+        
 
 
